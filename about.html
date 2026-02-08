@@ -2,19 +2,17 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About | Speedline Communication</title>
 <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <nav class="navbar">
     <div class="logo-nav">
-        <img src="logo.jpeg" class="logo">
+        <img src="logo.jpeg" class="logo" alt="Speedline Logo">
         <span>Speedline Communication</span>
     </div>
-
     <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -23,37 +21,52 @@
     </ul>
 </nav>
 
+<header class="hero">
+    <video autoplay muted loop playsinline class="hero-video">
+        <source src="hero-video.mp4" type="video/mp4">
+    </video>
+    <div class="hero-content">
+        <h1>About Us</h1>
+        <p>We create trust, credibility, and positive influence for organizations.</p>
+    </div>
+</header>
+
 <section>
-<h2>About Us</h2>
-<p>
-Speedline Communication is a premium PR and strategic communication
-firm dedicated to building trust and professional public image.
-</p>
-
-<h2>Vision</h2>
-<p>
-To be a trusted PR communication team promoting credibility
-and understanding.
-</p>
-
-<h2>Mission</h2>
+<h2>Our Mission</h2>
 <ul>
 <li>Enhance organizational image</li>
-<li>Build relationships</li>
-<li>Deliver clear communication</li>
+<li>Build positive relationships</li>
+<li>Deliver clear and engaging communication</li>
 </ul>
 </section>
-    
-    <video autoplay muted loop playsinline class="section-video">
-    <source src="about-video.mp4" type="video/mp4">
-</video>
+
+<section>
+<h2>Our Vision</h2>
+<p>To be a trusted PR communication team known for promoting credibility and positive public image.</p>
+</section>
 
 <footer>
 <p class="copyright">© 2026 Speedline Communication</p>
 </footer>
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll("section");
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                entry.target.classList.add("show");
+            }
+        });
+    }, { threshold: 0.2 });
+    sections.forEach(section => observer.observe(section));
+});
+</script>
+
 </body>
 </html>
+
+
 
 
 
