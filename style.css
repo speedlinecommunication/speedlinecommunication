@@ -110,3 +110,47 @@ footer {
 .copyright {
     font-size: 14px;
 }
+/* ================= MOBILE RESPONSIVENESS ================= */
+
+@media (max-width: 768px) {
+
+    /* NAVBAR STACK */
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+
+    /* HERO TEXT */
+    .hero {
+        padding: 80px 15px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    /* SECTIONS */
+    section {
+        margin: 20px 10px;
+        padding: 40px 20px;
+    }
+
+    /* LOGO SIZE */
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
