@@ -2,19 +2,17 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Services | Speedline Communication</title>
 <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <nav class="navbar">
     <div class="logo-nav">
-        <img src="logo.jpeg" class="logo">
+        <img src="logo.jpeg" class="logo" alt="Speedline Logo">
         <span>Speedline Communication</span>
     </div>
-
     <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -23,9 +21,18 @@
     </ul>
 </nav>
 
-<section>
-<h2>Our Services</h2>
+<header class="hero">
+    <video autoplay muted loop playsinline class="hero-video">
+        <source src="hero-video.mp4" type="video/mp4">
+    </video>
+    <div class="hero-content">
+        <h1>Our Services</h1>
+        <p>Professional PR & Strategic Communication Solutions</p>
+    </div>
+</header>
 
+<section>
+<h2>Services We Offer</h2>
 <ul class="services-list">
 <li>Media Relations</li>
 <li>Strategic Communication</li>
@@ -34,19 +41,30 @@
 <li>Corporate Communication</li>
 <li>Brand Reputation Management</li>
 </ul>
-
 </section>
-    
-    <video autoplay muted loop playsinline class="section-video">
-    <source src="about-video.mp4" type="video/mp4">
-</video>
 
 <footer>
 <p class="copyright">© 2026 Speedline Communication</p>
 </footer>
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll("section");
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                entry.target.classList.add("show");
+            }
+        });
+    }, { threshold: 0.2 });
+    sections.forEach(section => observer.observe(section));
+});
+</script>
+
 </body>
 </html>
+
+
 
 
 
