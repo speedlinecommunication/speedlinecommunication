@@ -1,15 +1,8 @@
-/* BODY BACKGROUND */
+/* BODY AND BACKGROUND */
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
     color: #111;
-
-    background: linear-gradient(
-        135deg,
-        #f5f5f5,
-        #ffffff,
-        #f0f0f0
-    );
 }
 
 /* NAVBAR */
@@ -21,7 +14,6 @@ body {
     background: #000;
 }
 
-/* LOGO */
 .logo-nav {
     display: flex;
     align-items: center;
@@ -35,13 +27,11 @@ body {
     border: 2px solid #d4af37;
 }
 
-/* BRAND NAME */
 .logo-nav span {
     color: #d4af37;
     font-weight: bold;
 }
 
-/* NAV LINKS */
 .nav-links {
     list-style: none;
     display: flex;
@@ -57,141 +47,7 @@ body {
     color: #d4af37;
 }
 
-/* HERO */
-.hero {
-    background: linear-gradient(
-        rgba(0,0,0,0.7),
-        rgba(0,0,0,0.7)
-    ),
-    url("bg.jpg");
-
-    background-size: cover;
-    background-position: center;
-    color: #d4af37;
-    text-align: center;
-    padding: 120px 20px;
-}
-
-.hero p {
-    color: #fff;
-}
-
-/* SECTIONS */
-section {
-    padding: 60px 30px;
-    max-width: 1000px;
-    margin: 40px auto;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-}
-/* ANIMATION */
-section {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: all 1s ease-out;
-}
-
-section.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-
-/* HEADINGS */
-h2 {
-    border-bottom: 3px solid #d4af37;
-    display: inline-block;
-    padding-bottom: 5px;
-}
-
-/* SERVICES */
-.services-list {
-    list-style: square;
-    padding-left: 20px;
-}
-
-/* FOOTER */
-footer {
-    background: #000;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-}
-
-.copyright {
-    font-size: 14px;
-}
-/* ================= MOBILE RESPONSIVENESS ================= */
-
-@media (max-width: 768px) {
-
-    /* NAVBAR STACK */
-    .navbar {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        gap: 10px;
-        padding: 0;
-    }
-
-    /* HERO TEXT */
-    .hero {
-        padding: 80px 15px;
-    }
-
-    .hero h1 {
-        font-size: 28px;
-    }
-
-    .hero p {
-        font-size: 14px;
-    }
-
-    /* SECTIONS */
-    section {
-        margin: 20px 10px;
-        padding: 40px 20px;
-    }
-
-    /* LOGO SIZE */
-    .logo {
-        width: 50px;
-        height: 50px;
-    }
-}
-/* WELCOME SECTION */
-.welcome {
-    text-align: center;
-}
-
-.welcome p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin: 20px 0;
-}
-
-/* CALL TO ACTION BUTTON */
-.cta-btn {
-    display: inline-block;
-    background: #d4af37;
-    color: #000;
-    padding: 12px 25px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 30px;
-    transition: 0.3s;
-}
-
-.cta-btn:hover {
-    background: #000;
-    color: #d4af37;
-}
-/* HERO VIDEO */
+/* HERO WITH VIDEO */
 .hero {
     position: relative;
     height: 100vh;
@@ -228,6 +84,7 @@ footer {
     margin-bottom: 25px;
 }
 
+/* CALL TO ACTION BUTTON */
 .cta-btn {
     display: inline-block;
     background: #d4af37;
@@ -244,29 +101,78 @@ footer {
     color: #d4af37;
 }
 
-/* HERO RESPONSIVE */
+/* SECTIONS */
+section {
+    padding: 60px 30px;
+    max-width: 1000px;
+    margin: 40px auto;
+    background: rgba(255,255,255,0.95);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease-out;
+}
+
+section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* HEADINGS */
+h2 {
+    border-bottom: 3px solid #d4af37;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* SERVICES LIST */
+.services-list {
+    list-style: square;
+    padding-left: 20px;
+}
+
+/* FOOTER */
+footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer .copyright {
+    font-size: 14px;
+}
+
+/* RESPONSIVE */
 @media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
     .hero-content h1 {
         font-size: 28px;
     }
     .hero-content p {
         font-size: 16px;
     }
+    section {
+        margin: 20px 10px;
+        padding: 40px 20px;
+    }
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
 }
-.section-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
-
-
-
-
-
-
-
 
