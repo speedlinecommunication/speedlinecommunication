@@ -152,5 +152,34 @@ footer {
         height: 50px;
     }
 }
+/* WELCOME SECTION */
+.welcome {
+    text-align: center;
+}
+
+.welcome p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+/* CALL TO ACTION BUTTON */
+.cta-btn {
+    display: inline-block;
+    background: #d4af37;
+    color: #000;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    background: #000;
+    color: #d4af37;
+}
+
+
 
 
