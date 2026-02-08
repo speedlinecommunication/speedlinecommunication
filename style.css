@@ -1,0 +1,112 @@
+/* BODY BACKGROUND */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: #111;
+
+    background: linear-gradient(
+        135deg,
+        #f5f5f5,
+        #ffffff,
+        #f0f0f0
+    );
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #000;
+}
+
+/* LOGO */
+.logo-nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 2px solid #d4af37;
+}
+
+/* BRAND NAME */
+.logo-nav span {
+    color: #d4af37;
+    font-weight: bold;
+}
+
+/* NAV LINKS */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-links a:hover {
+    color: #d4af37;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ),
+    url("bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    color: #d4af37;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero p {
+    color: #fff;
+}
+
+/* SECTIONS */
+section {
+    padding: 60px 30px;
+    max-width: 1000px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* HEADINGS */
+h2 {
+    border-bottom: 3px solid #d4af37;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* SERVICES */
+.services-list {
+    list-style: square;
+    padding-left: 20px;
+}
+
+/* FOOTER */
+footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.copyright {
+    font-size: 14px;
+}
