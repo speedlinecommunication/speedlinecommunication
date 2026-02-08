@@ -1,39 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Speedline Communication | Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home | Speedline Communication</title>
 <link rel="stylesheet" href="style.css">
 </head>
-
-    <script>
-document.addEventListener("DOMContentLoaded", function () {
-    const sections = document.querySelectorAll("section");
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if(entry.isIntersecting){
-                entry.target.classList.add("show");
-            }
-        });
-    }, { threshold: 0.2 });
-
-    sections.forEach(section => {
-        observer.observe(section);
-    });
-});
-</script>
-
 <body>
 
 <!-- NAVBAR -->
 <nav class="navbar">
     <div class="logo-nav">
-        <img src="logo.jpeg" class="logo">
+        <img src="logo.jpeg" class="logo" alt="Speedline Logo">
         <span>Speedline Communication</span>
     </div>
-
     <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -42,47 +22,51 @@ document.addEventListener("DOMContentLoaded", function () {
     </ul>
 </nav>
 
-<!-- HERO -->
+<!-- HERO WITH VIDEO -->
 <header class="hero">
-
-    <!-- VIDEO BACKGROUND -->
     <video autoplay muted loop playsinline class="hero-video">
         <source src="hero-video.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
     </video>
-
-    <!-- HERO CONTENT -->
     <div class="hero-content">
         <h1>Speedline Communication</h1>
         <p>Managing Reputation • Driving Influence • Building Trust</p>
         <a href="services.html" class="cta-btn">Explore Our Services</a>
     </div>
-
 </header>
 
+<!-- WELCOME SECTION -->
 <section class="welcome">
-
-<h2>Welcome to Speedline Communication</h2>
-
-<p>
-At Speedline Communication, we specialize in shaping powerful public
-perception, building organizational trust, and driving strategic
-influence through professional communication solutions.
-</p>
-
-<a href="services.html" class="cta-btn">
-Explore Our Services
-</a>    
+    <h2>Welcome to Speedline Communication</h2>
+    <p>
+        We specialize in shaping powerful public perception, building trust,
+        and driving strategic influence for organizations.
+    </p>
 </section>
 
 <footer>
-<p class="copyright">
-© 2026 Speedline Communication
-</p>
+<p class="copyright">© 2026 Speedline Communication</p>
 </footer>
+
+<script>
+/* FADE-IN ANIMATION */
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll("section");
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                entry.target.classList.add("show");
+            }
+        });
+    }, { threshold: 0.2 });
+    sections.forEach(section => observer.observe(section));
+});
+</script>
 
 </body>
 </html>
+
+
 
 
 
