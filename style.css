@@ -1,17 +1,21 @@
-/* BODY AND BACKGROUND */
+/* =============== GENERAL STYLES =============== */
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
     color: #111;
 }
 
-/* NAVBAR */
+/* =============== NAVBAR =============== */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
     background: #000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
 }
 
 .logo-nav {
@@ -32,6 +36,7 @@ body {
     font-weight: bold;
 }
 
+/* NAV LINKS */
 .nav-links {
     list-style: none;
     display: flex;
@@ -47,7 +52,33 @@ body {
     color: #d4af37;
 }
 
-/* HERO WITH VIDEO */
+/* HAMBURGER MENU */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background: #d4af37;
+    margin: 4px;
+    transition: 0.3s;
+}
+
+.nav-links.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #000;
+    width: 100%;
+    text-align: center;
+}
+
+/* HERO VIDEO */
 .hero {
     position: relative;
     height: 100vh;
@@ -84,7 +115,6 @@ body {
     margin-bottom: 25px;
 }
 
-/* CALL TO ACTION BUTTON */
 .cta-btn {
     display: inline-block;
     background: #d4af37;
@@ -119,7 +149,6 @@ section.show {
     transform: translateY(0);
 }
 
-/* HEADINGS */
 h2 {
     border-bottom: 3px solid #d4af37;
     display: inline-block;
@@ -130,6 +159,38 @@ h2 {
 .services-list {
     list-style: square;
     padding-left: 20px;
+}
+
+/* CONTACT FORM */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.contact-form button {
+    background: #d4af37;
+    color: #000;
+    padding: 12px;
+    border: none;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #000;
+    color: #d4af37;
 }
 
 /* FOOTER */
@@ -151,14 +212,14 @@ footer .copyright {
 /* RESPONSIVE */
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
+        flex-direction: row;
+        justify-content: space-between;
     }
     .nav-links {
-        flex-direction: column;
-        gap: 10px;
-        padding: 0;
+        display: none;
+    }
+    .hamburger {
+        display: flex;
     }
     .hero-content h1 {
         font-size: 28px;
@@ -175,4 +236,3 @@ footer .copyright {
         height: 50px;
     }
 }
-
