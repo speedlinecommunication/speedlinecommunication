@@ -1,21 +1,18 @@
-/* =============== GENERAL STYLES =============== */
+/* BODY */
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
     color: #111;
 }
 
-/* =============== NAVBAR =============== */
+/* NAVBAR */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
     background: #000;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 100;
+    position: relative;
 }
 
 .logo-nav {
@@ -36,7 +33,6 @@ body {
     font-weight: bold;
 }
 
-/* NAV LINKS */
 .nav-links {
     list-style: none;
     display: flex;
@@ -52,30 +48,12 @@ body {
     color: #d4af37;
 }
 
-/* HAMBURGER MENU */
+/* HAMBURGER */
 .hamburger {
     display: none;
-    flex-direction: column;
+    font-size: 28px;
+    color: #d4af37;
     cursor: pointer;
-}
-
-.hamburger div {
-    width: 25px;
-    height: 3px;
-    background: #d4af37;
-    margin: 4px;
-    transition: 0.3s;
-}
-
-.nav-links.open {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 70px;
-    right: 0;
-    background: #000;
-    width: 100%;
-    text-align: center;
 }
 
 /* HERO VIDEO */
@@ -115,6 +93,7 @@ body {
     margin-bottom: 25px;
 }
 
+/* CTA BUTTON */
 .cta-btn {
     display: inline-block;
     background: #d4af37;
@@ -161,38 +140,6 @@ h2 {
     padding-left: 20px;
 }
 
-/* CONTACT FORM */
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    width: 100%;
-    font-size: 16px;
-}
-
-.contact-form button {
-    background: #d4af37;
-    color: #000;
-    padding: 12px;
-    border: none;
-    font-weight: bold;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.contact-form button:hover {
-    background: #000;
-    color: #d4af37;
-}
-
 /* FOOTER */
 footer {
     background: #000;
@@ -201,25 +148,25 @@ footer {
     padding: 20px;
 }
 
-footer p {
-    margin: 5px 0;
-}
-
-footer .copyright {
-    font-size: 14px;
-}
-
 /* RESPONSIVE */
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
+        text-align: center;
     }
     .nav-links {
+        flex-direction: column;
         display: none;
+        gap: 10px;
+        width: 100%;
+        background: #111;
+        padding: 10px 0;
+    }
+    .nav-links.active {
+        display: flex;
     }
     .hamburger {
-        display: flex;
+        display: block;
     }
     .hero-content h1 {
         font-size: 28px;
@@ -235,15 +182,4 @@ footer .copyright {
         width: 50px;
         height: 50px;
     }
-}
-.whatsapp-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 999;
-}
-
-.whatsapp-button img {
-    width: 50px;
-    height: 50px;
 }
