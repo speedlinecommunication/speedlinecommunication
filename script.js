@@ -1,21 +1,19 @@
-const hamburger = document.querySelector(".hamburger");
-const navLinks = document.querySelector(".nav-links");
+// MENU TOGGLE
+function toggleMenu() {
+    document.querySelector(".nav-links").classList.toggle("active");
+}
 
-hamburger.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-});
+// ANIMATION
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll("section");
 
-// SCROLL ANIMATION
-const sections = document.querySelectorAll("section");
-
-window.addEventListener("scroll", () => {
-    const trigger = window.innerHeight * 0.8;
-
-    sections.forEach(section => {
-        const top = section.getBoundingClientRect().top;
-
-        if(top < trigger){
-            section.classList.add("show");
-        }
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                entry.target.classList.add("show");
+            }
+        });
     });
+
+    sections.forEach(section => observer.observe(section));
 });
