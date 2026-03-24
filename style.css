@@ -27,14 +27,24 @@ body {
     text-decoration: none;
 }
 
-/* HERO IMAGE */
+/* HERO IMAGE FIX */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("bg.jpg");
-    background-size: cover;
     height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* MOBILE IMAGE CONTROL */
+@media (max-width: 768px) {
+    .hero {
+        background-position: top center;
+    }
 }
 
 .hero-content {
@@ -46,14 +56,23 @@ body {
 section {
     padding: 40px;
     margin: 20px;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+/* SHOW ANIMATION */
+section.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* BUTTON */
 .cta-btn {
     background: gold;
     padding: 10px 20px;
-    text-decoration: none;
     border-radius: 20px;
+    text-decoration: none;
 }
 
 /* FORM */
@@ -73,4 +92,19 @@ section {
     color: white;
     padding: 15px;
     border-radius: 50%;
+}
+
+/* ANIMATIONS */
+.fade-in {
+    animation: fadeIn 1.5s ease-in;
+}
+
+.fade-up {
+    opacity: 0;
+}
+
+/* KEYFRAMES */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
