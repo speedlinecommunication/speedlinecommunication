@@ -1,116 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="About Speedline Communication - Ghana's trusted PR firm. Vision, Mission & Core Values.">
-    <title>About Us | Speedline Communication</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About | Speedline Communication</title>
+
+<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <!-- NAVBAR (copy from index.html or use same structure) -->
-    <nav class="navbar">
-        <div class="logo-nav">
-            <img src="logo.jpeg" alt="Speedline Communication Logo">
-            <span>Speedline Communication</span>
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="hamburger" id="hamburger">
-            <span></span><span></span><span></span>
-        </div>
-    </nav>
 
-    <!-- HERO - About page with unique background -->
-    <header class="hero hero-about">
-        <div class="hero-overlay">
-            <h1 class="fade-in">About Speedline Communication</h1>
-            <p class="slogan fade-in">Building trust. Shaping narratives.<br>Since day one in Ghana.</p>
-        </div>
-    </header>
+<header>
+<nav class="navbar">
 
-    <section class="about-content">
-        <div class="container">
-            <p>Speedline Communication is a premium public relations and strategic communication firm dedicated to enhancing organizational reputation and building trust through clear, professional, and impactful communication.</p>
-            
-            <!-- Vision & Mission -->
-            <div class="mission-vision-grid">
-                <div>
-                    <h2>Our Vision</h2>
-                    <p>To be a trusted PR communication team known for promoting understanding, credibility, and positive public image for organizations across Ghana and Africa.</p>
-                </div>
-                <div>
-                    <h2>Our Mission</h2>
-                    <ul>
-                        <li>Enhance organizational image through strategic PR tools</li>
-                        <li>Build positive relationships between organizations and their publics</li>
-                        <li>Deliver clear, accurate, and engaging communication</li>
-                    </ul>
-                </div>
-            </div>
+<div class="logo">
+<img src="images/logo.png">
+<span>Speedline Communication</span>
+</div>
 
-            <!-- Core Values -->
-            <div class="values-section">
-                <h2>Our Core Values</h2>
-                <div class="values-list">
-                    Integrity • Professionalism • Clarity • Creativity • Accountability • Respect • Teamwork
-                </div>
-            </div>
-        </div>
-    </section>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
 
-    <!-- LIVE WHATSAPP -->
-    <a href="https://wa.me/233531243269?text=Hello%20Speedline%20Communication%2C%20I%20would%20like%20to%20discuss%20PR%20services" 
-       class="whatsapp-btn" target="_blank" aria-label="Chat on WhatsApp">
-        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5c-1.48 0-2.9-.38-4.13-1.05L3 21l1.05-5.37A8.5 8.5 0 0 1 3 11.5 8.5 8.5 0 0 1 11.5 3 8.5 8.5 0 0 1 21 11.5z"></path>
-            <path d="M8 12h.01M12 12h.01M16 12h.01"></path>
-        </svg>
-    </a>
+</nav>
+</header>
 
-    <footer>
-        <!-- Same footer as index.html - copy the footer block here -->
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="logo.jpeg" alt="Speedline Logo">
-                    <span>Speedline Communication</span>
-                </div>
-                <div class="footer-contact">
-                    <p><strong>Contact Us</strong></p>
-                    <p>📞 <a href="tel:0531243269">0531243269</a></p>
-                    <p>📧 <a href="mailto:speedlinecommunication02@gmail.com">speedlinecommunication02@gmail.com</a></p>
-                    <p>📍 Kumasi &amp; Accra, Ghana</p>
-                </div>
-                <div class="footer-links">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="services.html">Services</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-            </div>
-            <p class="copyright">© 2026 Speedline Communication • All Rights Reserved</p>
-        </div>
-    </footer>
 
-    <script>
-        // Same script as index.html for hamburger + animations
-        const hamburger = document.getElementById('hamburger');
-        const navLinks = document.querySelector('.nav-links');
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            hamburger.classList.toggle('active');
-        });
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-                hamburger.classList.remove('active');
-            });
-        });
-    </script>
+<section class="page-banner about-bg">
+<h1>About Us</h1>
+</section>
+
+<section class="content">
+
+<p>
+Speedline Communication is a professional public relations and strategic communication agency dedicated to strengthening organizational reputation and building trust through effective communication.
+</p>
+
+<h2>Our Vision</h2>
+
+<p>
+To be a trusted PR communication team promoting credibility and positive public image for organizations.
+</p>
+
+<h2>Our Mission</h2>
+
+<ul>
+<li>Enhance organizational image through strategic PR tools</li>
+<li>Build relationships between organizations and publics</li>
+<li>Deliver clear, accurate and engaging communication</li>
+</ul>
+
+</section>
+
 </body>
 </html>
