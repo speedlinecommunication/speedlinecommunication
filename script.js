@@ -1,13 +1,13 @@
-// MENU TOGGLE
+// MENU
 function toggleMenu() {
     document.querySelector(".nav-links").classList.toggle("active");
 }
 
 // ANIMATION
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
     const sections = document.querySelectorAll("section");
 
-    const observer = new IntersectionObserver((entries) => {
+    const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if(entry.isIntersecting){
                 entry.target.classList.add("show");
