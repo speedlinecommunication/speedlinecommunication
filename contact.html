@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,10 +12,10 @@
 <nav class="navbar">
 <div class="logo-nav">
 <img src="logo.jpeg" class="logo">
-<span>Speedline Communication</span>
+<span>Speedline</span>
 </div>
 
-<div class="hamburger">&#9776;</div>
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
 <ul class="nav-links">
 <li><a href="index.html">Home</a></li>
@@ -26,35 +26,24 @@
 </nav>
 
 <header class="hero">
-<div class="hero-content fade-in">
+<div class="hero-overlay"></div>
+<div class="hero-content">
 <h1>Contact Us</h1>
 </div>
 </header>
 
-<section class="fade-up">
-
-<form action="https://formspree.io/f/abcd1234" method="POST" class="contact-form">
-
-<input type="hidden" name="_subject" value="New Message">
-
-<input type="text" name="name" placeholder="Your Name" required>
-<input type="email" name="email" placeholder="Your Email" required>
-<textarea name="message" placeholder="Your Message" required></textarea>
-
-<button type="submit">Send Message</button>
-
+<section>
+<form class="contact-form">
+<input type="text" placeholder="Name">
+<input type="email" placeholder="Email">
+<textarea placeholder="Message"></textarea>
+<button type="submit">Send</button>
 </form>
-
 </section>
 
-<a href="https://wa.me/233531243269?text=Hello%20Speedline%20Communication,%20I%20need%20your%20PR%20services" class="whatsapp-float" target="_blank">💬</a>
+<footer>© 2026 Speedline</footer>
 
-<footer>
-<p>📞 0531243269</p>
-<p>📧 speedlinecommunication02@gmail.com</p>
-<p>📍 Accra & Kumasi</p>
-<p>© 2026 Speedline Communication</p>
-</footer>
+<a href="https://wa.me/233531243269" class="whatsapp">💬</a>
 
 <script src="script.js"></script>
 </body>
