@@ -14,6 +14,7 @@
         <img src="logo.jpeg" class="logo" alt="Speedline Logo">
         <span>Speedline Communication</span>
     </div>
+    <div class="hamburger">&#9776;</div>
     <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -22,46 +23,55 @@
     </ul>
 </nav>
 
-<!-- HERO WITH VIDEO -->
+<!-- HERO VIDEO -->
 <header class="hero">
-    <video autoplay muted loop playsinline class="hero-video">
-        <source src="hero-video.mp4" type="video/mp4">
+    <video autoplay muted loop playsinline class="hero-video" preload="auto">
+        <source src="IMG_8281.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
     </video>
     <div class="hero-content">
         <h1>Speedline Communication</h1>
-        <p>Managing Reputation • Driving Influence • Building Trust</p>
+        <p>Your Legacy-Our Corcern</p>
         <a href="services.html" class="cta-btn">Explore Our Services</a>
     </div>
 </header>
 
-<!-- WELCOME SECTION -->
-<section class="welcome">
-    <h2>Welcome to Speedline Communication</h2>
+    <!-- WELCOME SECTION -->
+    <section class="welcome">
+
+     </section>
+     <h2>Welcome to Speedline Communication</h2>
     <p>
-        We specialize in shaping powerful public perception, building trust,
-        and driving strategic influence for organizations.
+     We specialize in shaping public perception, building organizational trust,
+     and driving strategic influence through professional communication solutions.
     </p>
+    
+    <section>
+<h2>What Clients Say</h2>
+
+<div class="testimonial">
+<p>"Speedline Communication transformed our brand image and increased our visibility."</p>
+<strong>- MOBMAT Director</strong>
+</div>
+
+<div class="testimonial">
+<p>"Professional, reliable, and highly effective PR solutions."</p>
+<strong>- MOBMAT Owner</strong>
+</div>
+  
+</section>
+    <section class="cta-final">
+<h2>Ready to Build Your Brand?</h2>
+<p>Let us help you manage your reputation and grow your influence.</p>
+
+<a href="contact.html" class="cta-btn">Contact Us Now</a>
 </section>
 
 <footer>
 <p class="copyright">© 2026 Speedline Communication</p>
 </footer>
 
-<script>
-/* FADE-IN ANIMATION */
-document.addEventListener("DOMContentLoaded", function () {
-    const sections = document.querySelectorAll("section");
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if(entry.isIntersecting){
-                entry.target.classList.add("show");
-            }
-        });
-    }, { threshold: 0.2 });
-    sections.forEach(section => observer.observe(section));
-});
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
