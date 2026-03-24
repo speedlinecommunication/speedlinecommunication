@@ -50,7 +50,7 @@ body {
 
 /* HAMBURGER */
 .hamburger {
-    display: yes;
+    display: none;
     font-size: 28px;
     color: #d4af37;
     cursor: pointer;
