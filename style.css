@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
@@ -7,6 +11,7 @@ body {
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background: black;
     padding: 15px;
 }
@@ -27,24 +32,23 @@ body {
     text-decoration: none;
 }
 
-/* HERO IMAGE FIX */
+/* HAMBURGER */
+.hamburger {
+    display: none;
+    font-size: 25px;
+    color: gold;
+    cursor: pointer;
+}
+
+/* HERO */
 .hero {
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("bg.jpg");
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("bg.jpg");
     background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-/* MOBILE IMAGE CONTROL */
-@media (max-width: 768px) {
-    .hero {
-        background-position: top center;
-    }
 }
 
 .hero-content {
@@ -52,59 +56,51 @@ body {
     text-align: center;
 }
 
+/* CTA */
+.cta-btn {
+    background: gold;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+}
+
 /* SECTIONS */
 section {
     padding: 40px;
-    margin: 20px;
     opacity: 0;
     transform: translateY(40px);
-    transition: all 0.8s ease;
+    transition: 0.8s;
 }
 
-/* SHOW ANIMATION */
 section.show {
     opacity: 1;
     transform: translateY(0);
 }
 
-/* BUTTON */
-.cta-btn {
-    background: gold;
-    padding: 10px 20px;
-    border-radius: 20px;
-    text-decoration: none;
+/* MOBILE */
+@media(max-width:768px){
+.nav-links{
+display:none;
+flex-direction:column;
+background:black;
+width:100%;
 }
 
-/* FORM */
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
+.nav-links.active{
+display:flex;
 }
 
-/* WHATSAPP */
-.whatsapp-float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: green;
-    color: white;
-    padding: 15px;
-    border-radius: 50%;
+.hamburger{
+display:block;
+}
 }
 
-/* ANIMATIONS */
-.fade-in {
-    animation: fadeIn 1.5s ease-in;
-}
-
-.fade-up {
-    opacity: 0;
-}
-
-/* KEYFRAMES */
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
+/* FOOTER */
+footer{
+background:black;
+color:white;
+text-align:center;
+padding:20px;
 }
