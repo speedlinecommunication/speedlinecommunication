@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport">
 <title>About</title>
 <link rel="stylesheet" href="style.css">
 </head>
@@ -15,7 +15,7 @@
 <span>Speedline Communication</span>
 </div>
 
-<div class="hamburger">&#9776;</div>
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
 <ul class="nav-links">
 <li><a href="index.html">Home</a></li>
@@ -26,28 +26,42 @@
 </nav>
 
 <header class="hero">
-<div class="hero-content fade-in">
+<div class="hero-overlay"></div>
+<div class="hero-content">
 <h1>About Us</h1>
-<p>We build credibility and influence.</p>
 </div>
 </header>
 
-<section class="fade-up">
-<h2>Mission</h2>
-<p>Enhancing organizational image and public trust.</p>
+<section>
+<h2>Our Mission</h2>
+<p>We enhance reputation and build trust.</p>
 </section>
 
-<section class="fade-up">
-<h2>Vision</h2>
-<p>To be a trusted PR firm known for excellence.</p>
+<section class="team">
+<h2>Team</h2>
+<div class="team-container">
+
+<div class="team-card">
+<img src="person1.jpg">
+<p>PR Strategist</p>
+</div>
+
+<div class="team-card">
+<img src="person2.jpg">
+<p>Media Manager</p>
+</div>
+
+<div class="team-card">
+<img src="person3.jpg">
+<p>Digital Manager</p>
+</div>
+
+</div>
 </section>
 
-<footer>
-<p>📞 0531243269</p>
-<p>📧 speedlinecommunication02@gmail.com</p>
-<p>📍 Accra & Kumasi</p>
-<p>© 2026 Speedline Communication</p>
-</footer>
+<footer>© 2026 Speedline</footer>
+
+<a href="https://wa.me/233531243269" class="whatsapp">💬</a>
 
 <script src="script.js"></script>
 </body>
