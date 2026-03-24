@@ -59,7 +59,7 @@ body {
 .hero {
     position: relative;
     height: 100vh;
-    background: url center center/cover no-repeat; /* your image file here */
+    background: url("bg.jpg") center center/cover no-repeat; /* your image file here */
     display: flex;
     justify-content: center;
     align-items: center;
