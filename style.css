@@ -24,6 +24,7 @@ body {
 .logo {
     width: 60px;
     border-radius: 50%;
+    border: 2px solid gold;
 }
 
 .logo-nav span {
@@ -42,11 +43,15 @@ body {
     text-decoration: none;
 }
 
-/* HAMBURGER */
+.nav-links a:hover {
+    color: gold;
+}
+
+/* MOBILE MENU */
 .menu-toggle {
     display: none;
+    font-size: 25px;
     color: white;
-    font-size: 28px;
     cursor: pointer;
 }
 
@@ -55,8 +60,8 @@ body {
     height: 100vh;
     background: url("bg.jpg") center/cover no-repeat;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     position: relative;
 }
 
@@ -68,16 +73,17 @@ body {
 }
 
 .hero-content {
-    position: relative;
     color: gold;
     text-align: center;
+    z-index: 1;
 }
 
+/* BUTTON */
 .cta-btn {
     background: gold;
     padding: 10px 20px;
-    text-decoration: none;
     color: black;
+    text-decoration: none;
     border-radius: 20px;
 }
 
@@ -86,10 +92,9 @@ section {
     padding: 50px 20px;
     max-width: 900px;
     margin: auto;
-
     opacity: 0;
     transform: translateY(40px);
-    transition: 0.8s;
+    transition: 1s;
 }
 
 section.show {
@@ -115,7 +120,7 @@ section.show {
     border-radius: 10px;
 }
 
-/* CONTACT */
+/* CONTACT FORM */
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -142,12 +147,14 @@ footer {
     right: 20px;
     background: green;
     color: white;
-    padding: 12px;
+    padding: 15px;
     border-radius: 50%;
+    text-decoration: none;
 }
 
 /* MOBILE */
 @media (max-width: 768px) {
+
     .menu-toggle {
         display: block;
     }
