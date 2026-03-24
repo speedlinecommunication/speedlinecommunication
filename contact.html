@@ -1,23 +1,69 @@
-<section class="page-banner contact-bg">
-<h1>Contact Us</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Speedline Communication</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo-nav">
+        <img src="logo.jpeg" class="logo" alt="Speedline Logo">
+        <span>Speedline Communication</span>
+    </div>
+    <div class="hamburger">&#9776;</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<header class="hero">
+    <video autoplay muted loop playsinline class="hero-video" preload="auto">
+        <source src="IMG_8281.mp4" type="video/mp4">
+    </video>
+    <div class="hero-content">
+        <h1>Contact Us</h1>
+        <p>Reach out to us for PR and strategic communication solutions</p>
+    </div>
+</header>
+
+<section>
+<h2>Get In Touch</h2>
+<p>📞 0531243269</p>
+<p>📧 speedlinecommunication02@gmail.com</p>
+<p>📍 KNUST-KUMASI</p>
 </section>
 
-<section class="content">
+<section>
+<form action="https://formspree.io/f/xyknvqga" method="POST" class="contact-form">
 
-<form>
+<input type="hidden" name="_subject" value="New Message from Speedline Website">
+<input type="hidden" name="_captcha" value="false">
 
-<input type="text" placeholder="Your Name" required>
-
-<input type="email" placeholder="Your Email" required>
-
-<textarea placeholder="Your Message"></textarea>
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" rows="6" placeholder="Your Message" required></textarea>
 
 <button type="submit">Send Message</button>
 
 </form>
 
-<p>📞 0531243269</p>
-<p>📧 speedlinecommunication02@gmail.com</p>
-<p>📍 Kumasi & Accra</p>
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/233531243269?text=Hello%20Speedline%20Communication,%20I%20need%20your%20PR%20services" class="whatsapp-float" target="_blank">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp Chat">
+</a>
 
-</section>
+
+    
+    <footer>
+<p class="copyright">© 2026 Speedline Communication</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
